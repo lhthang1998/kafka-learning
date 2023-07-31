@@ -1,0 +1,19 @@
+[
+  {
+    "name": "topic-1",
+    "partitions": 1,
+    "replication-factor": 1,
+    "acls:": [
+      {
+        "principal": "User:alice",
+        "permission": "allow",
+        "operation": "read"
+      },
+      {
+        "principal": "User:alice",
+        "permission": "allow",
+        "operation": "write "
+      }
+    ]
+  }
+]

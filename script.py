@@ -22,7 +22,7 @@ def get_cluster_id():
 def create_topic(topic):
     cluster = get_cluster_id()
     topic_resp = requests.post(url=f'{REST_PROXY_URL}/clusters/{cluster}/topics', headers=HEADERS, json={
-        "topic_name": "test",
+        "topic_name": topic,
         "partitions_count": 1,
         "replication_factor": 1,
         "configs": [

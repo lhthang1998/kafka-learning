@@ -1,7 +1,7 @@
 #!/bin/bash
 
 createTopics() {
-  python script.py
+  python3 script.py
 }
 
 waitForHealth() {
